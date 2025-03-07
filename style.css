@@ -1,0 +1,53 @@
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#legend-container {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    z-index: 1; /* Pour être sûr que ça ne soit pas caché sous la carte */
+}
+
+#legend {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-right: 10px; /* Un peu d'espace entre la légende et l'échelle */
+}
+
+
+#legend div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+#legend span {
+    width: 20px;
+    height: 10px;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+#map-title {
+    position: absolute;
+    top: 20px; /* Un peu d'espace du haut */
+    left: 50%; /* Centré horizontalement */
+    transform: translateX(-50%); /* Ajuste pour centrer précisément */
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5em; /* Taille du titre */
+    font-weight: bold;
+    color: #780000; /* Une couleur bleue, tu peux la changer */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Ombre légère pour un effet 3D */
+    margin: 0;
+    z-index: 2; /* Pour s'assurer que le titre soit au-dessus de la carte */
+}
